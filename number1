@@ -1,0 +1,27 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int dividend;
+    int divisor;
+    int quotient;
+    
+    cout <<"Enter possible integer value for dividend: ";
+    cin >>dividend;
+    
+    cout <<"Enter possible integer value for divisor: ";
+    cin >>divisor;
+    
+    
+    while(dividend >= divisor)
+    {
+        dividend -= divisor;
+        quotient++;
+    }
+    
+    
+    cout <<quotient<< endl;
+
+    return 0;
+}
